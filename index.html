@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>table,th,td  {border:2px solid  rgb(16, 17, 16);}</style>
+<head class="site-header">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+   
+              <div style="text-align: center;">
+              
+
+</div>
+<style>
+/* Reset */
+* {
+  margin: 0;
+  
+  box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== HEADER & NAVBAR ===== */
+header {
+  background-color: aqua;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color:white ;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: white;
+}
+
+
+
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+
+}
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #004080;
+      color: white;
+    }
+
+</style>
+</div>
+</head>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"> </div>
+     
+      <ul class="nav-links">
+        <img src="badge.jpg" width="100px" height="80px">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+   
+<style>
+
+    
+    .services-section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .services-section h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 80px;
+    }
+
+    @media (max-width: 700px) {
+      .services-container {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+      }
+    }
+
+    .service-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .service-box h3 {
+      color: #3498db;
+      margin-bottom: 15px;
+    }
+
+    .service-box p {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      height: 400px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .mySlides {
+      display: none;
+      width: 100%;
+      height: 400px;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4 }
+      to { opacity: 1 }
+    }
+.services-container{
+  text-align: center;
+}
+    
+  </style>
+</head>
+
+
+<body>
+
+
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="4to0.jpg" alt="School Photo 1">
+    </div>
+    <div class="mySlides fade">
+      <img src="4to10.jpg" alt="School Photo 2">
+    </div>
+    <div class="mySlides fade">
+      <img src="s6.jpg" alt="School Photo 3">
+    </div>
+
+    <div class="text-overlay">Welcome to Mirembe Secondary School</div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
+    <div style="text-align: left;">
+
+ 
+</div></div>
+  <style>
+
+ 
+     
+     /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    table th, table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    table th {
+      background: #0056b3;
+      color: white;
+    }
+    table tr:hover {
+      background: #f1f9ff;
+      
+    }
+    button {
+                        margin-top: 25px;
+                        padding: 10px 20px;
+                        color: blue;
+                        border: none;
+                        text-align: center;
+
+                    }
+
+                   
+</style>
+<div class="container">
+  <p style="text-align: center;">
+  MIREMBE SECONDARY SCHOOL is a place of learning, growth and experience. 
+    Here we nuture minds, build character and prepare our students to become responsible citizens and future leaders.
+    We are delighted to have you as part of our school community together we learn grow and succeed.
+  </p>
+</div>
+
+<table style="width:100%">
+  <h3 style="color: #0056b3; text-align: center;">OUR STUDENT'S PERFORMANCE. </h3>
+       <tr>
+      <th>YEARS</th>
+      <th>FIRST GRADES</th>
+      <th>SECOND GRADES</th>
+      <th> THIRD GRADES</th>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>25</td>
+      <td>15</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>27</td>
+      <td>20</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td>30</td>
+      <td>20</td>
+      <td>4</td>
+    </tr>
+    
+  </table>
+</div>
+
+        
+      </div>
+      <div class="container">
+
+</div>
+
+<P style="text-align: center; font-style: oblique; font-size: larger; color: #007bff;">
+<a href="Admission.html">APPLY NOW</a>
+</P>
+</body>
+<footer>
+ 
+        <h2 style="color:  #f4f4f4;"> Contact us on</h2>
+        +256758646346<br>
+        +256772888003<br>
+        +256702888003<br>
+        <h2>Follow us ons </h2>
+        <a href="https://wa.me/256772888003" target="_blanck">
+            <img src="whatsp.jpg"alt="whatsp" style="width: 40px">
+                <a href="https://wa.me/256772888003" target="_blanck">
+            <img src="utube.jpg"alt="u-tube" style="width: 40px">
+            <a href="https://wa.me/256772888003" target="_blanck">
+            <img src="fb.jpg"alt="facebook" style="width: 50px">
+        </a>
+        </a>
+    </p>
+</div></div></div>
+  <h3  style="color: #3498db;">QUICK LINKS</h3>
+  <a href="index.html"><button>Home</button></a>
+ <a href="About.html"><button>About</button></a>
+ <a href="Services.html"><button>Services</button></a>
+ <a href="Contacts.html"><button>Contacts</button></a>
+</div>
+   <p style="text-align: center;">&COPY 2025 MIREMBE SECONDARY SCHOOL.</p>
+</footer>
+</html>

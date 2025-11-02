@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head class="site-header">
+<div style="background-color: aqua;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    
+              <div style="text-align: center;">
+              
+
+</div>
+<style>
+/* Reset */
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== HEADER & NAVBAR ===== */
+header {
+  background-color: aqua;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: white;
+}
+
+/* ===== CONTAINERS ===== */
+.container {
+  width: 100%;
+  
+  
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+
+
+</style>
+</div>
+</head>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"> </div>
+     
+      <ul class="nav-links">
+        <img src="badge.jpg" width="100px" height="80px">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+<style>
+  /* head section */
+   header {
+    background-color:aqua;
+   }
+   h1 {
+    color: darkgreen;
+    font-style: italic;
+    text-align: center;
+   }
+    /* Footer section */
+    footer{
+      background:white;
+      color:black;
+      text-align: center;
+      padding: 15px;
+    
+
+    }
+    footer a{
+      color: #007bff;
+      text-decoration: none;
+      margin: 0 8px;
+
+    }
+    footer a:hoover{
+text-decoration: overline;
+    }
+    .container{
+      background-color: bisque;
+      color: rgb(2, 13, 22);
+      width: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+     gap: 10px;
+    }
+    </style>
+
+
+   <style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: ;
+ padding: 20px;
+
+ }
+ .form-container {
+max-width: 700px;
+ margin: auto;
+ border-radius: 10px;
+ background-color: white;border: 2px solid;
+ max-height: 1000px;
+ padding: 8px;
+ } label{
+ display:block;
+font-weight: bold;
+margin-top: 15px;
+ }
+button { margin-top: 25px;
+  padding: 10px 20px; 
+  color: blue;
+border: none;
+ }button:hover {
+background-color: green;} </style>
+ <div class="form-container">
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      height: 400px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .mySlides {
+      display: none;
+      width: 100%;
+      height: 400px;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4 }
+      to { opacity: 1 }
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #004080;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
+<h1 style="text-align: center;">MIREMBE SECONDARY SCHOOL</h1>
+
+
+    <form action="#" method="post">
+
+        <!-- Student Details -->
+        <div class="form-section">
+            <label for="studentName">Full Name of Student:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">-- Select --</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="class">Class Applying For:</label>
+            <select id="class" name="class" required>
+                <option value="">-- Select --</option>
+                <option value="senior 1">senior 1</option>
+                <option value="senior 2">senior 2</option>
+                <option value="senior 3">senior 3</option>
+                <option value="senior 4">senior 4</option>
+
+            </select>
+        </div>
+
+        <!-- Parent/Guardian Details -->
+        <div class="form-section">
+            <label for="parentName">Parent/Guardian Full Name:</label>
+            <input type="text" id="parentName" name="parentName" required>
+
+            <label for="relationship">Relationship to Student:</label>
+            <input type="text" id="relationship" name="relationship" required>
+
+            <label for="contact">Phone Number:</label>
+            <input type="tel"it id="contact" name="contact" required pattern="[0-9]{10,15}" placeholder="e.g. 08012345678">
+
+            <label for="email">Email Address (optional):</label>
+            <input type="email" id="email" name="email">
+
+            <label for="address">Home Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="form-section">
+            <label for="medical">Any Medical Conditions or Allergies:</label>
+            <textarea id="medical" name="medical" rows="2"></textarea>
+
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="2"></textarea>
+        </div>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+
+
+</div></div>
+
+
+</body>
+<footer>
+<div class="service-box">
+      
+      <h2> Contact us on</h2>
+    <p>
+        +256758646346<br>
+        +256772888003<br>
+        +256702888003<br>
+        <h2>Follow us ons </h2>
+        <a href="https://wa.me/256772888003" target="_blanck">
+            <img src="whatsp.jpg"alt="whatsp" style="width: 40px">
+                <a href="https://wa.me/256772888003" target="_blanck">
+            <img src="utube.jpg"alt="u-tube" style="width: 40px">
+            <a href="https://wa.me/256772888003" target="_blanck">
+            <img src="fb.jpg"alt="facebook" style="width: 50px">
+        </a>
+        </a>
+    </p>
+  <h3  style="color: #3498db;">QUICK LINKS</h3>
+  <a href="index.html"><button>Home</button></a>
+ <a href="About.html"><button>About</button></a>
+ <a href="Services.html"><button>Services</button></a>
+ <a href="Contacts.html"><button>Contacts</button></a>
+ </div>
+  
+   <p style="text-align: center;">&COPY 2025 MIREMBE SECONDARY SCHOOL.</p>
+</footer>
+ </html>
